@@ -1617,6 +1617,7 @@ ul {
   position: relative;
   display: block;
   z-index: 3;
+  
 }
 
 .feature-one__container {
@@ -1820,6 +1821,7 @@ ul {
   display: block;
   margin-right: 40px;
   z-index: 3;
+  
 }
 
 .welcome-one__img-box {
@@ -1947,14 +1949,16 @@ ul {
 }
 
 .welcome-one__text-1 {
-  font-size: 24px;
+  font-size: 18px;
   color: var(--qondri-base);
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
 }
 
 .welcome-one__text-2 {
+  font-size: 14px;
   margin: 0;
+  
 }
 
 .welcome-one__points {
@@ -2619,7 +2623,7 @@ ul {
 }
 
 .why-choose-one__text-2 {
-  font-size: 16px;
+  font-size: 10px;
   margin: 0;
   line-height: 29px;
 }
@@ -3632,7 +3636,7 @@ ul {
 }
 
 .welcome-two__title {
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 700;
   line-height: 30px;
   margin-top: 10px;
@@ -3640,7 +3644,7 @@ ul {
 }
 
 .welcome-two__text-2 {
-  font-size: 16px;
+  font-size: 10px;
   margin: 0;
   line-height: 29px;
 }
@@ -3653,7 +3657,7 @@ ul {
 }
 
 .welcome-two__more-laundry-service a {
-  font-size: 18px;
+  font-size: 10px;
   color: var(--qondri-black);
   font-weight: 600;
   display: flex;
