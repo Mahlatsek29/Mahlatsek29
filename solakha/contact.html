@@ -48,6 +48,29 @@
     <link rel="stylesheet" href="assets/css/qondri-responsive.css" />
 </head>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#contact-form').on('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        $.ajax({
+            url: 'https://formspree.io/f/mnqeyjdl',
+            method: 'POST',
+            data: $(this).serialize(),
+            dataType: 'json',
+            success: function(data) {
+                alert('Message sent successfully!');
+            },
+            error: function(err) {
+                alert('Failed to send message.');
+                console.log(err);
+            }
+        });
+    });
+});
+</script>
+
 <body>
     <div class="preloader">
         <img class="preloader__image" width="60" src="assets/images/resources/solakha-logo.png" alt="" />
@@ -209,7 +232,7 @@
                     </div>
                     <div class="col-xl-8 col-lg-7">
                         <div class="contact-page__right">
-                            <form action="assets/inc/sendemail.php" class="comment-one__form contact-form-validated" novalidate="novalidate">
+                            <form id="contact-form" class="comment-one__form contact-form-validated" novalidate="novalidate">
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6 col-md-6">
                                         <div class="comment-form__input-box">
