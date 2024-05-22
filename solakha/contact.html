@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Contact || Qondri || Qondri HTML Template For Londri</title>
+    <title> Contact || Solakha Laundry
+    </title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/Solakha Logo32x32.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/Solakha Logo32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/Solakha Logo32x32.png" />
+    <!-- <link rel="manifest" href="assets/images/favicons/site.webmanifest" /> -->
     <meta name="description" content="Qondri HTML Template For Londri" />
 
     <!-- fonts -->
@@ -47,9 +48,32 @@
     <link rel="stylesheet" href="assets/css/qondri-responsive.css" />
 </head>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#contact-form').on('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        $.ajax({
+            url: 'https://formspree.io/f/mnqeyjdl',
+            method: 'POST',
+            data: $(this).serialize(),
+            dataType: 'json',
+            success: function(data) {
+                alert('Message sent successfully!');
+            },
+            error: function(err) {
+                alert('Failed to send message.');
+                console.log(err);
+            }
+        });
+    });
+});
+</script>
+
 <body>
     <div class="preloader">
-        <img class="preloader__image" width="60" src="assets/images/loader.png" alt="" />
+        <img class="preloader__image" width="60" src="assets/images/resources/solakha-logo.png" alt="" />
     </div>
     <!-- /.preloader -->
     <div class="page-wrapper">
@@ -63,7 +87,8 @@
                                     <span class="icon-email"></span>
                                 </div>
                                 <div class="text">
-                                    <p><a href="mailto:needhelp@company.com">thembakazimange@gmail.com</a></p>
+                                    <p><a href="mailto:needhelp@company.com">
+                                        info@solakhalaundry.co.za</a></p>
                                 </div>
                             </li>
                             <li>
@@ -79,8 +104,8 @@
                     <div class="main-header__top-right">
                         <div class="main-header__top-social">
                             <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <!-- <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -89,7 +114,7 @@
                 <div class="main-menu-wrapper clearfix">
                     <div class="main-menu-wrapper__left">
                         <div class="main-menu-wrapper__logo">
-                           <h3>Solakha</h3>
+                            <a href="index.html"><img src="assets/images/resources/solakha.png" alt="" height="45" width=220"></a>
                         </div>
                         <div class="main-menu-wrapper__btn-box">
                             <a href="contact.html" class="thm-btn main-menu-wrapper__btn">Schedule a Pickup <span class="icon-right-arrow"></span></a>
@@ -157,7 +182,7 @@
                                 </div>
                                 <div class="main-menu-wrapper__call-number">
                                     <p>Call Anytime</p>
-                                    <h5><a href="tel:926668880000">072 696 2006</a></h5>
+                                    <h5><a href="tel:926668880000">081 870 3310</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -199,15 +224,15 @@
                             </div>
                             <p class="contact-page__text">It has survived not only five centuries, but also the leap into electronic typesetting unchanged. It was popularised in the sheets.</p>
                             <div class="contact-page__social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
                                 <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-7">
                         <div class="contact-page__right">
-                            <form action="assets/inc/sendemail.php" class="comment-one__form contact-form-validated" novalidate="novalidate">
+                            <form id="contact-form" class="comment-one__form contact-form-validated" novalidate="novalidate">
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6 col-md-6">
                                         <div class="comment-form__input-box">
@@ -252,7 +277,7 @@
         <section class="contact-page-google-map">
             <div class="contact-page-google-map__inner">
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53211.363208584226!2d25.625817704330508!3d-33.53491955052777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e64cc99135dcf39%3A0x12c1b7ce779dec03!2sAddo%2C%206105!5e0!3m2!1sen!2sza!4v1716291202807!5m2!1sen!2sza"
                 class="contact-page-google-map__one" allowfullscreen></iframe>
             </div>
         </section>
@@ -267,7 +292,7 @@
                             <span class="icon-telephone"></span>
                         </div>
                         <p>
-                            <a href="tel:926668888000" class="contact-info__number-2">072 696 2006</a>
+                            <a href="tel:926668888000" class="contact-info__number-2"> 081 870 3310</a>
                         </p>
                     </li>
                     <li class="contact-info__single">
@@ -275,7 +300,8 @@
                             <span class="icon-email"></span>
                         </div>
                         <p>
-                            <a href="mailto:info@company.com" class="contact-info__mail-2">thembakazimange@gmail.com</a>
+                            <a href="mailto:info@company.com" class="contact-info__mail-2">
+                                info@solakhalaundry.co.za</a>
                         </p>
                     </li>
                     <li class="contact-info__single">
@@ -300,7 +326,7 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__column footer-widget__about">
                                 <div class="footer-widget__logo">
-                                    <!-- <a href="index.html"><img src="assets/images/resources/logo-2.png" alt=""></a> -->
+                                    <a href="index.html"><img src="assets/images/resources/solakha-logo.png" alt="" height="45" width=150"></a>
                                    
                                 </div>
                                 <div class="footer-widget__about-text-box">
@@ -308,9 +334,9 @@
                                         Been this Easy!</p>
                                 </div>
                                 <div class="site-footer__social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
                                     <a href="#"><i class="fab fa-facebook"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
+<!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                                 </div>
                             </div>
                         </div>
@@ -337,7 +363,7 @@
                                             <span class="icon-email"></span>
                                         </div>
                                         <div class="text">
-                                            <a href="mailto:needhelp@company.com">info@solakhalaundry.com</a>
+                                            <a href="mailto:needhelp@company.com">info@solakhalaundry.co.za</a>
                                         </div>
                                     </li>
                                     <li>
@@ -345,7 +371,7 @@
                                             <span class="icon-telephone"></span>
                                         </div>
                                         <div class="text">
-                                            <a href="tel:926668880000"> 072 696 2006</a>
+                                            <a href="tel:926668880000"> 081 870 3310</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -375,9 +401,9 @@
                                 <p class="site-footer__bottom-text">© Copyright 2024 by <a href="#">Atlegile Marketing Solutions</a>
                                 </p>
                                 <ul class="list-unstyled site-footer__bottom-menu">
-                                    <li><a href="about.html">Terms & Condition</a></li>
+                                    <li><a href="">Terms & Condition</a></li>
                                     <li><span>/</span></li>
-                                    <li><a href="about.html">Privacy Policy</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -398,7 +424,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-2.png" width="155"
+                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/solakha-logo.png" width="170"
                         alt="" /></a>
             </div>
             <!-- /.logo-box -->
@@ -408,18 +434,18 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@packageName__.com">needhelp@qondri.com</a>
+                    <a href="mailto:needhelp@packageName__.com">info@solakhalaundry.co.za</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
-                    <a href="tel:666-888-0000">666 888 0000</a>
+                    <a href="tel:666-888-0000">081 870 3310</a>
                 </li>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
                 <div class="mobile-nav__social">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
                     <a href="#"><i class="fab fa-facebook"></i></a>
-?                                    <a href="#"><i class="fab fa-instagram"></i></a>
+<!-- ?                                    <a href="#"><i class="fab fa-instagram"></i></a> -->
                 </div><!-- /.mobile-nav__social -->
             </div><!-- /.mobile-nav__top -->
 
