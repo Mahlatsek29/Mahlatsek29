@@ -1749,7 +1749,7 @@ ul {
 .welcome-one {
   position: relative;
   display: block;
-  padding: 240px 0 690px;
+  padding: 240px 0 150px;
   background-color: var(--qondri-primary);
   margin-top: -120px;
   z-index: 1;
@@ -1775,7 +1775,7 @@ ul {
   background-size: cover;
   background-position: center;
   background-color: var(--qondri-primary);
-  height: 1225px;
+  height: 250px;
   background-blend-mode: soft-light;
   z-index: -1;
 }
